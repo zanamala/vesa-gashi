@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vesa Gashi | Freelance Makeup Artist Chicago</title>
+  <meta name="description" content="Get in touch with Vesa Gashi for editorial makeup bookings, fashion shows, red carpet, masterclasses, and brand collaborations in Chicago and worldwide." />
+  <meta property="og:title" content="Contact — Vesa Gashi | Freelance Makeup Artist" />
+  <meta property="og:description" content="Book Vesa Gashi for editorial makeup, runway, red carpet events, and brand partnerships." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <div class="brand">
+        <a href="index.html" class="brand-name" id="brand-link">VESA GASHI</a>
+        <span class="brand-subtitle">MAKEUP ARTIST &bull; CHICAGO</span>
+      </div>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html#portfolio" class="nav-link" id="nav-portfolio">PORTFOLIO</a></li>
+          <li><a href="index.html#events" class="nav-link" id="nav-events">EVENTS</a></li>
+          <li><a href="index.html#clients" class="nav-link" id="nav-clients">CLIENTS</a></li>
+          <li><a href="contact.html" class="nav-link active" id="nav-contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <nav aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="index.html#portfolio" class="mobile-nav-link">PORTFOLIO</a></li>
+          <li><a href="index.html#events" class="mobile-nav-link">EVENTS</a></li>
+          <li><a href="index.html#clients" class="mobile-nav-link">CLIENTS</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <span>15 YEARS EXPERIENCE &bull; CHICAGO, IL</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="contact-page-main">
+    <section class="contact-page-section">
+      <div class="contact-page-container">
+        <!-- Left Column: Picture Placeholder -->
+        <div class="contact-image-wrapper">
+          <div class="contact-placeholder-frame">
+            <div class="placeholder-pattern"></div>
+            <div class="contact-placeholder-content">
+              <span class="placeholder-tag">PORTRAIT PLACEHOLDER</span>
+              <h2 class="contact-image-title">Vesa Gashi</h2>
+              <p class="contact-image-sub">15 Years Experience &bull; Chicago &amp; Worldwide</p>
+              <div class="contact-image-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Form & Info -->
+        <div class="contact-form-wrapper">
+          <div class="contact-form-header">
+            <span class="contact-page-label">GET IN TOUCH</span>
+            <h1 class="contact-page-title">Bookings &amp; Inquiries</h1>
+            <p class="contact-page-desc">
+              For editorial bookings, runway direction, red carpet appearances, masterclasses, or brand partnerships, please complete the form below or write directly to <a href="mailto:contact@vesagashi.com" class="direct-email">contact@vesagashi.com</a>.
+            </p>
+          </div>
+
+          <form class="booking-form" id="booking-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">FIRST NAME *</label>
+                <input type="text" id="first-name" name="first_name" required placeholder="Jane" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">LAST NAME *</label>
+                <input type="text" id="last-name" name="last_name" required placeholder="Doe" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS *</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inquiry-type">INQUIRY TYPE *</label>
+                <select id="inquiry-type" name="inquiry_type" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="editorial">Editorial / Campaign</option>
+                  <option value="runway">Runway / Fashion Week</option>
+                  <option value="redcarpet">Red Carpet / Celebrity</option>
+                  <option value="masterclass">Masterclass / Workshop</option>
+                  <option value="bridal">Luxury Bridal</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="event-date">PROJECT / EVENT DATE</label>
+                <input type="date" id="event-date" name="event_date" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="location">LOCATION / VENUE</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Chicago, IL or Paris" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">MESSAGE / PROJECT DETAILS *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Please describe the scope of work, timeline, and any specific requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <span>SEND INQUIRY</span>
+            </button>
+
+            <!-- Success notification box -->
+            <div class="form-success-message" id="form-success-message">
+              <h3>INQUIRY SENT</h3>
+              <p>Thank you for reaching out! Vesa will review your details and respond within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact-page-footer">
+    <div class="footer-container">
+      <div class="footer-block">
+        <span>DIRECT EMAIL: <a href="mailto:contact@vesagashi.com">contact@vesagashi.com</a></span>
+        <span>INSTAGRAM: <a href="https://instagram.com/vesagashimakeup" target="_blank" rel="noopener">@vesagashimakeup</a></span>
+      </div>
+      <div class="footer-meta">
+        <span>VESA GASHI &bull; FREELANCE MAKEUP ARTIST &bull; CHICAGO, IL</span>
+        <div class="footer-social-links">
+          <a href="https://instagram.com/vesagashimakeup" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/vesagashimakeup" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@vesagashimakeup" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
