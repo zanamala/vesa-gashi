@@ -1258,11 +1258,14 @@ button {
 .contact-image-wrapper {
   position: sticky;
   top: calc(var(--header-height) + 2rem);
+  max-width: 400px;
+  width: 100%;
 }
 
 .contact-placeholder-frame {
   width: 100%;
   aspect-ratio: 3 / 4;
+  max-height: 520px;
   background-color: var(--bg-accent);
   border: 1px solid var(--border-color);
   position: relative;
